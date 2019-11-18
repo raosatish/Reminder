@@ -1,0 +1,15 @@
+﻿<Window x:Class="NotificationAreaManager.NotificationManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
+        xmlns:local="clr-namespace:NotificationAreaManager"
+        mc:Ignorable="d"
+        Title="NotificationManagerWindow" Height="200" Width="500">
+    <Grid>
+        <tb:TaskbarIcon x:Name="NotificationIcon" Visibility="Visible" ToolTipText="{Binding ToolTipTextMessage}" ContextMenu="{Binding IconContextMenu}" IconSource="{Binding IconObject}">
+            
+        </tb:TaskbarIcon>
+    </Grid>
+</Window>
